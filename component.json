@@ -1,5 +1,8 @@
 {
   "name": "d3",
   "version": "3.0.8",
+  "scripts": [
+    "d3.js"
+  ],
   "main": "./d3.js"
 }

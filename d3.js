@@ -7252,8 +7252,8 @@ d3 = function() {
     }
   };
   var d3_time_prototype = Date.prototype;
-  var d3_time_formatDateTime = "%a %b %e %X %Y", d3_time_formatDate = "%m/%d/%Y", d3_time_formatTime = "%H:%M:%S";
-  var d3_time_days = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ], d3_time_dayAbbreviations = [ "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ], d3_time_months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ], d3_time_monthAbbreviations = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+  var d3_time_formatDateTime = "%a %b/%e %T %Y", d3_time_formatDate = "%Y/%m/%d", d3_time_formatTime = "%H时%M分%S秒";
+  var d3_time_days = [ "星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六" ], d3_time_dayAbbreviations = [ "日", "一", "二", "三", "四", "五", "六" ], d3_time_months = [ "一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月" ], d3_time_monthAbbreviations = [ " 1", " 2", " 3", " 4", " 5", " 6", " 7", " 8", " 9", "10", "11", "12" ];
   d3.time.format = function(template) {
     var n = template.length;
     function format(date) {
@@ -7799,3 +7799,5 @@ d3 = function() {
   };
   return d3;
 }();
+
+module.exports = d3;
